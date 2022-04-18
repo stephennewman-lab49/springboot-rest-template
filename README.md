@@ -9,6 +9,7 @@ backstage template to create a spring boot rest microservice deployed to k8s, ac
 based upon the [springboot-grpc-template](https://github.com/backstage/software-templates/tree/main/scaffolder-templates/springboot-grpc-template)
 
 
+https://backstage.io/docs/getting-started/
 
 
 backstage tutorial
@@ -70,4 +71,29 @@ java package package com.example.demo;
 
 
 
+
+=====
+was having trouble displaying updated contents in available templates and then wouldn't display my template, due to 
+
+[1] 2022-04-18T21:54:07.679Z catalog warn Unable to read url, Error: https://github.com/stephennewman-lab49/springboot-rest-template/tree/main/template.yaml could not be read as https://api.github.com/repos/stephennewman-lab49/springboot-rest-template/contents/template.yaml?ref=main, 401 Unauthorized type=plugin entity=location:default/generated-1a93ad2818889ee034472d7deb4a42be5625f79f
+
+so setup github security in backstage again
+
+https://github.com/settings/applications/new
+
+
+Client ID
+17a2a642685553c505d2
+Client secrets
+Make sure to copy your new client secret now. You won’t be able to see it again.
+
+Client secret
+ a36d477265d7820f66196d513e1da659d90bd745 
+Added now by stephennewman-lab49
+Never used
+You cannot delete the only client secret. Generate a new client secret first.
+
+
+https://github.com/settings/tokens/new
+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
 
