@@ -5,30 +5,31 @@ metadata:
   title: Spring Boot Rest Service
   description: Create a simple Restful microservice using Spring Boot Java
   tags:
+    - recommended
     - java
     - rest
     - openapi
     - k8s
 spec:
-  owner: stephen@lab49.com
+  owner: service@example.com
   type: service
 
   parameters:
-    - title: Provide values to configure the generated project
+    - title: Provide some simple information
       required:
         - component_id
         - owner
         - java_package_name
       properties:
         component_id:
-          title: Component ID
+          title: Name
           type: string
           description: Unique name of the component
           ui:field: EntityNamePicker
         java_package_name:
           title: Java Package Name
           type: string
-          description: Name for the java base package. eg (com.lab49)
+          description: Name for the java package. eg (io.backstage.blah)
         description:
           title: Description
           type: string
