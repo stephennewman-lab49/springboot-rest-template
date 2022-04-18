@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: rest-service-complete
+  name: rest-service-complete
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rest-service-complete
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: rest-service-complete
+    spec:
+      containers:
+      - image: lab49/rest-service-complete
+        name: rest-service-complete
+        resources: {}
+status: {}
