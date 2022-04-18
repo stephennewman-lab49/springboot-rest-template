@@ -11,7 +11,7 @@ metadata:
     - openapi
     - k8s
 spec:
-  owner: service@example.com
+  owner: stephen@lab49.com
   type: service
 
   parameters:
@@ -22,14 +22,14 @@ spec:
         - java_package_name
       properties:
         component_id:
-          title: Name
+          title: Component ID
           type: string
           description: Unique name of the component
           ui:field: EntityNamePicker
         java_package_name:
           title: Java Package Name
           type: string
-          description: Name for the java package. eg (io.backstage.blah)
+          description: Name for the java base package. eg (com.lab49)
         description:
           title: Description
           type: string
