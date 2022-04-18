@@ -5,7 +5,6 @@ metadata:
   title: Spring Boot Rest Service
   description: Create a simple Restful microservice using Spring Boot Java
   tags:
-    - recommended
     - java
     - rest
     - openapi
@@ -15,7 +14,7 @@ spec:
   type: service
 
   parameters:
-    - title: Provide some simple information
+    - title: Provide values to configure the project
       required:
         - component_id
         - owner
