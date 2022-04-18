@@ -14,7 +14,7 @@ spec:
   type: service
 
   parameters:
-    - title: Provide values to configure the project
+    - title: Provide values to configure the generated project
       required:
         - component_id
         - owner
