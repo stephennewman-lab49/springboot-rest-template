@@ -97,3 +97,12 @@ You cannot delete the only client secret. Generate a new client secret first.
 https://github.com/settings/tokens/new
 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
 
+
+
+
+https://github.com/orgs/lab49-poc/repositories
+
+
+
+
+

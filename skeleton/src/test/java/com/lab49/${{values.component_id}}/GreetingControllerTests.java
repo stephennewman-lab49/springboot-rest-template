@@ -1,4 +1,4 @@
-package ${{values.java_package_name}}.${{values.component_id}};
+package com.lab49.${{values.component_id}};
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;

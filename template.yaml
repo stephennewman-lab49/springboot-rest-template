@@ -29,6 +29,7 @@ spec:
           title: Java Package Name
           type: string
           description: Java base package. eg (com.lab49)
+          value: com.lab49
         description:
           title: Description
           type: string

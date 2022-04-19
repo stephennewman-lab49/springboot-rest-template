@@ -1,4 +1,4 @@
-package ${{values.java_package_name}}.${{values.component_id}};
+package com.lab49.${{values.component_id}};
 
 import com.example.restservice.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
