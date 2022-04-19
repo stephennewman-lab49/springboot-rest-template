@@ -11,6 +11,6 @@ component_id: ${{ values.component_id }}
 description: ${{ values.description }}
 artifact_id: ${{ values.component_id }}
 owner: ${{ values.owner }}
-destination: ${{ values.repoUrl | parseRepoUrl }}
+destination: ${{ values.repoUrl }}
 description ${{values.description}}
 
