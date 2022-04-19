@@ -10,8 +10,9 @@ Available runtime values
 - description: ${{ values.description }}
 - artifact_id: ${{ values.component_id }}
 - owner: ${{ values.owner }}
-- description ${{values.description}}
-- destination owner/repo ${{values.destination.owner + "/" + values.destination.repo}}
+- description: ${{values.description}}
+- destination: owner/repo ${{values.destination.owner + "/" + values.destination.repo}}
+- port:  ${{values.http_port}}
 
 ### the process
 

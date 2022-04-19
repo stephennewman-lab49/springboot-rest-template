@@ -1,6 +1,5 @@
 package com.lab49.${{values.component_id}};
 
-import com.lab49.restservice.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
