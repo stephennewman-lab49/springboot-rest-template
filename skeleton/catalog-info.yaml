@@ -10,7 +10,7 @@ metadata:
     backstage.io/techdocs-ref: dir:docs
   tags:
     - java
-    - spring boot
+    - springboot
     - kubernetes
   links:
     - url: https://admin.example-org.com
