@@ -10,7 +10,7 @@ metadata:
     - openapi
     - k8s
 spec:
-  owner: stephen@lab49.com
+  owner: stephen.newman@lab49.com
   type: service
 
   parameters:
@@ -23,16 +23,16 @@ spec:
         component_id:
           title: Component ID
           type: string
-          description: Unique name of the component
+          description: Unique name of the application
           ui:field: EntityNamePicker
         java_package_name:
           title: Java Package Name
           type: string
-          description: Name for the java base package. eg (com.lab49)
+          description: Java base package. eg (com.lab49)
         description:
           title: Description
           type: string
-          description: Help others understand what this website is for.
+          description: Help others understand what this application is for.
         owner:
           title: Owner
           type: string
@@ -41,7 +41,7 @@ spec:
           ui:options:
             allowedKinds:
               - Group
-    - title: Choose a location
+    - title: Configure Code Repository
       required:
         - repoUrl
       properties:
