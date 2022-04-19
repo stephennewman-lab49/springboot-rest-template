@@ -7,7 +7,15 @@ metadata:
   {%- endif %}
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:docs
+  tags:
+    - java
+    - spring boot
+    - kubernetes
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
 spec:
   type: service
   lifecycle: experimental

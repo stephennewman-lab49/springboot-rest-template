@@ -10,7 +10,7 @@
         <version>2.2.4.RELEASE</version>
     </parent>
 
-    <groupId>com.example</groupId>
+    <groupId>com.lab49</groupId>
     <artifactId>${{values.artifact_id}}</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -32,25 +32,32 @@
         <url>https://jcenter.bintray.com/</url>
       </repository>
     </repositories>
+
     <dependencies>
-    	<dependency>
-          <groupId>io.github.lognet</groupId>
-          <artifactId>grpc-spring-boot-starter</artifactId>
-          <version>3.5.1</version>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
       </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
 
-        <dependency> <!-- necessary for Java 9+ -->
-          <groupId>org.apache.tomcat</groupId>
-          <artifactId>annotations-api</artifactId>
-          <version>6.0.53</version>
-          <scope>provided</scope>
-        </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency> <!-- necessary for Java 9+ -->
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>annotations-api</artifactId>
+        <version>6.0.53</version>
+        <scope>provided</scope>
+      </dependency>
+
     </dependencies>
 
 
