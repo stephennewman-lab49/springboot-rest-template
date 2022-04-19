@@ -20,7 +20,10 @@ in backstage
 1) from menu select Create... which shows page Create a New Component
 2) choose Spring Boot Rest Service template
 3) enter values across several steps
-4) choose create: this generates a new github repository https://github.com/${{values.destination.owner + "/" + values.destination.repo}}.git containing the skeleton project with runtime values substituted.
+4) choose create:
+- generates a new github repository https://github.com/${{values.destination.owner + "/" + values.destination.repo}}.git containing the skeleton project with runtime values substituted
+- registers the component in backstage
+
 on laptop
 5) clone the generated project locally, develop the microservice wanted, commit and push back to git repository
 back in backstage
