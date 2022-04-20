@@ -22,3 +22,6 @@ spec:
   owner: ${{values.owner | dump}}
   providesApis:
     - ${{ values.component_id }}
+    - petstore
+  consumesApis:
+    - petstore
