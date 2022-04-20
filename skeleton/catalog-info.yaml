@@ -20,3 +20,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: ${{values.owner | dump}}
+  providesApis:
+    - ${{ values.component_id }}
