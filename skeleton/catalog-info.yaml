@@ -21,7 +21,6 @@ spec:
   lifecycle: experimental
   owner: ${{values.owner | dump}}
   providesApis:
-    - ${{ values.component_id }}
-    - petstore
+    - stephendemo10
   consumesApis:
     - petstore

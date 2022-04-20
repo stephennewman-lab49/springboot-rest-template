@@ -26,9 +26,12 @@ in backstage
 
 on laptop
 5) clone the generated project locally, develop the microservice wanted, commit and push back to git repository
-back in backstage
-6) somehow build and deploy the microservice to k8s
 
+back in backstage
+6) somehow build and deploy the microservice
+- register api in backstage
+- deploy in k8s
+-
 
 
 ### build and run the generated project
@@ -36,8 +39,9 @@ back in backstage
 ```bash
 git clone https://github.com/${{values.destination.owner + "/" + values.destination.repo}}.git
 
-./mvnw spring-boot:run
+cd ${{values.destination.repo}}
 
+./mvnw spring-boot:run
 
 curl localhost:8080/greeting
 
