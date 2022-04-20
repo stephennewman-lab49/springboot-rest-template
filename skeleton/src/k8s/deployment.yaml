@@ -1,24 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
-    app: rest-service-complete
-  name: rest-service-complete
+    app: ${{values.artifact_id}}
+  name: ${{values.artifact_id}}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rest-service-complete
-  strategy: {}
+      app: ${{values.artifact_id}}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: rest-service-complete
+        app: ${{values.artifact_id}}
     spec:
       containers:
-      - image: lab49/rest-service-complete
-        name: rest-service-complete
-        resources: {}
-status: {}
+      - image: ${{ values.owner }}/${{values.artifact_id}}
+        name: ${{values.artifact_id}}

@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ${{values.artifact_id}}
+  annotations:
+    konghq.com/strip-path: "true"
+    kubernetes.io/ingress.class: kong
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /${{values.artifact_id}}
+            backend:
+              serviceName: ${{values.artifact_id}}
+              servicePort: ${{values.http_port}}
