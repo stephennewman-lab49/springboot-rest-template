@@ -8,4 +8,4 @@ spec:
   lifecycle: experimental
   owner: ${{values.destination.owner}}
   definition:
-    $text: https://github.com/${{values.destination.owner + "/" + values.destination.repo}}/blob/master/src/main/resources/api-docs.yaml
+    $text: src/main/resources/api-docs.yaml

@@ -11,7 +11,7 @@ Available runtime values
 - artifact_id: ${{ values.component_id }}
 - owner: ${{ values.owner }}
 - description: ${{values.description}}
-- destination: owner/repo ${{values.destination.owner + "/" + values.destination.repo}}
+- destination: ${{values.destination.owner + "/" + values.destination.repo}}
 - port:  ${{values.http_port}}
 
 ### the process
@@ -31,8 +31,6 @@ back in backstage
 6) somehow build and deploy the microservice
 - register api in backstage
 - deploy in k8s
--
-
 
 ### build and run the generated project
 
