@@ -28,9 +28,24 @@ on laptop
 5) clone the generated project locally, develop the microservice wanted, commit and push back to git repository
 
 back in backstage
-6) somehow build and deploy the microservice
-- register api in backstage
+6) github actions  [workflow](.github/workflows/build.yml) builds and deploys the microservice
+- register api in backstage  TODO?
 - deploy in k8s
+- register api in kong developer portal TODO
+
+
+need
+1) github repository e.g https://github.com/lab49-poc where lab49-poc is github organisation representing a distinct owner CBA
+2) github repository has secrets setup for k8s details e.g.
+- AWS_ACCESS_KEY_ID: [refer](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds-create)
+- AWS_SECRET_ACCESS_KEY: [refer](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds-create)
+- KUBE_CONFIG: contains result of `cat ~/.kube/config | base64`
+- ECR_REPOSITORY_NAME: : could be same name as organisation
+- AWS_REGION : ap-southeast-2
+- K8S_CLUSTER_NAME  : could be same name as organisation
+3) AWS EKS cluster was created as per https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
+4) AWS ECR repository created as per
+5) kong installed into AWS EKS as per [kong on aws workshop](https://kong.awsworkshop.io/introduction.html)
 
 ### build and run the generated project
 

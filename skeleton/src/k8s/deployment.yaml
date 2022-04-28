@@ -11,10 +11,9 @@ spec:
       app: ${{values.artifact_id}}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: ${{values.artifact_id}}
     spec:
       containers:
-      - image: ${{ values.owner }}/${{values.artifact_id}}
+      - image: --image--
         name: ${{values.artifact_id}}
