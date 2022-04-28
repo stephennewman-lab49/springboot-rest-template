@@ -7,7 +7,7 @@ metadata:
   {%- endif %}
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
-    backstage.io/techdocs-ref: dir:docs
+    backstage.io/techdocs-ref: dir:.
   tags:
     - java
     - springboot
