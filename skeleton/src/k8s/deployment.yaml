@@ -17,3 +17,5 @@ spec:
       containers:
       - image: --image--
         name: ${{values.artifact_id}}
+        ports:
+          - containerPort: ${{values.http_port}}

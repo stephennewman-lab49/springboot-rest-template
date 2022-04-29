@@ -8,7 +8,6 @@ spec:
   ports:
   - name: ${{values.http_port}}-${{values.http_port}}
     port: ${{values.http_port}}
-    protocol: TCP
     targetPort: ${{values.http_port}}
   selector:
     app: ${{values.artifact_id}}
