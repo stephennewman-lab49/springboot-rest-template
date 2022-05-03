@@ -70,9 +70,11 @@ jobs:
         run: |
           aws eks list-clusters
 
+      ## kubectl latest version 1.24 breaks authentication, kubeconfig will have to be updated
       - name: install kubectl
         run: |
           VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+          VERSION=v1.23.6
 
           echo $VERSION
 
