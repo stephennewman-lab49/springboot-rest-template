@@ -10,6 +10,7 @@ spec:
     - http:
         paths:
           - path: /${{values.artifact_id}}
+            pathType: Prefix
             backend:
               serviceName: ${{values.artifact_id}}
               servicePort: ${{values.http_port}}
