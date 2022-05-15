@@ -12,7 +12,7 @@ metadata:
     - java
     - springboot
     - kubernetes
-    - aws eks
+    - aws-eks
     - rest
   links:
     - title: health status
