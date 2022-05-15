@@ -12,9 +12,16 @@ metadata:
     - java
     - springboot
     - kubernetes
+    - aws eks
+    - rest
   links:
-    - url: https://admin.example-org.com
-      title: Admin Dashboard
+    - title: health status
+      ### DATA_PLANE_LB needs to be configured and plugged in
+      url: https://a20df726a16ea4cbdb91c30c2f82a6b2-1628815465.ap-southeast-2.elb.amazonaws.com/${{ values.component_id }}/actuator/health
+      icon: dashboard
+      ### domain name needs to be configured
+    - title: kong manager
+      url: http://a3f9fd27125c640cc8ce3f1d4f2ae5b0-1987737800.ap-southeast-2.elb.amazonaws.com:8002/overview
       icon: dashboard
 spec:
   type: service
