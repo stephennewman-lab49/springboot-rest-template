@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springboot-rest-template
+  annotations:
+    github.com/project-slug: stephennewman-lab49/springboot-rest-template
+spec:
+  type: other
+  lifecycle: unknown
+  owner: engineers
